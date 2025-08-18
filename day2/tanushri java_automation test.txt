@@ -1,0 +1,153 @@
+Q 1.selenium webdriver architecture consists of 4 components:
+1. selenium client Library:- It contains  programing language like c,c#,java,python,Ruby.
+2.JSON(JavaScript  object notation) wire protocal via https:In this programing language code is converted to json format.
+3.browser Driver: the  converted json file  interacts with the  reespective browser drivers.
+4.browers:finaly browser driver  interacts with the respective  browser will invoke [open].
+
+The browers interacts back with the  browser drivers will communicates with the  selenium client library.
+
+Q2. GET()is only used to open url.
+driver.get("https://google.com")
+get() is wait until whole webpage is loaded.
+
+navigate() is also used to open, refresh,foprwad,backward webpage.
+driver.navigate().to(url);
+
+navigate() doesnot wait  until whole web page is loaded
+
+Q3. WebDriver driver= new ChromeDriver();
+
+Q4.driver.manage().window().maximize();
+
+Q5. public static void main(String []args){
+int year=2024;
+if(year%4==0)
+{
+System.out.println(year+"IS A LEAP YEAR");
+
+}
+else{
+System.out.println(year+"IS NOT A LEAP YEAR");
+}
+
+Q6.&& IS a logical AND operator[condition1]&&[condition2]
+true&& true=true
+true&& false= false
+false&&true= false
+false&& false=false
+
+|| is also a logical OR operator
+CONDITION1||CONDITION2
+True||false= true
+True|| true=true
+false||true= true
+false||false=false
+
+Q7. VARIABLES ARE USED TO ASSIGNED RHS VALUE TO LHS  SIDE VARIABLE
+EG .String name="Rahul";
+
+Q8.Serverity is  used to find how important was the written testcase to the given  scenario.
+
+Q9.Preconditions is the conditions which is to tested according  to the scenario.
+
+Q10.  scenario Name Test_Google search operation
+       Testcase Name  google
+Pre conditions
+Serverity  High
+sr no                     Descriptions         Inputs                  Expected Results                                           Actual Results  remarks/comments   status
+
+1	Double click on Chrome browser	NA	                  Chrome browser window is displayed
+2	Click on Sign in button	NA	                               Sign in page should be displauyed
+3	Enter the valid email address  tanushriadekar9@gmail.com	           NA
+4	Click on Next Button	NA	Password field is displayed
+5	Enter the valid password	….........	NA
+6	Click on Sign in button	NA	                                "User profile icon should be displayed on top-right corner"
+7	Enter the text into search bar	  Software Testing	     Text should be display in a search input Field
+8	Press Enter key to search	Enter key	                   "Google displays search resultsrelated to ""software testing"""
+9	Click on “Google Search” button	NA	                                 Same as above – relevant results are shown
+10	Observe search suggestions while typing	   Type "software tes…"	         "Dropdown shows autocomplete suggestionslike ""software testing"
+11	Select a suggestion from the list	"software testing types"	Search results for selected suggestion are shown
+12	Use voice search	                  Speak "software testing"	                Recognizes input and shows search results
+13	Perform search with wrong spelling	"softwre testing"	             Google suggests correct spelling "Did you mean: software testing"
+14	Perform search with special characters	"#software&testing"	            Google processes and shows relevant results
+15	Perform empty search	No input + click Search	                                     NA
+
+
+
+Q11.In functional testing each and every component  of webpage   tested against the require documents.
+There are 5 types of functional testing
+3 genral
+1. under testing : in this very less inputs should be given and prrformed testing.
+2.over testing:giving reputed inputs and preform  testing eg. amount=1-50000
+1,2,3,4,5,6,7..............................500000
+
+3.optimise approach: Here we carefully give the inputs it is not repeated in nature.
+eg.amount=1-50,0000
+1 lower limit- starting point -1
+1 upper limit-ending point-50,000
+1 middle value-21
+1 decimal value-100.50
+
+2 additional
+1.positive testing: here we give only valid inputs  according to requirement documents.
+2.Negative testing: here we give invalid inputs against the requirement documents.
+
+
+Q12. Build is an part of application it is deployed from Dev environment to QA environment
+It is in the from of url.
+the url structure is in the from of https://applicationname .servername.com
+
+
+Q13.exploratory testing is the process of self learning andsimulteously perform testing
+ to perfrom exploratory testing there is no access to requirement  document.oncethe build is ready the qa tester starts with the exploratory testing  and gom to the  highlevel test is sanity it is passed. then BBT is performed.
+
+
+Q14. Alpha testing few end user prefromed testing in UAT ENVhere we crosscheck whether the software supports all the requirement  business acenario or not.
+alpha is used forbanking application,crypto,trading.
+it is  not live to the end user.
+It is internal.
+
+Beta testing few end user prefromed testing in UAT ENVhere we crosscheck whether the software supports all the requirement  business acenario or not.
+alpha is used for non banking application like google releses.
+it is not live  to the end user
+it is used for enduser.
+
+
+
+
+Q15.SCENARIO IS A highlevel description of what need to be tested.
+scenario name=Test_login_page
+
+
+Testcases is a  detailed  step by step meaning what need to be tested.
+we can write both positive and negative testcases
+eg.Testcasenane=TC-01_Login_usertname and password
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
